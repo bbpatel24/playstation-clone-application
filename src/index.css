@@ -1,0 +1,968 @@
+/* GENERIC-CSS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, arial, sans-serif;
+  color: #1f1f1f;
+  line-height: 24px;
+  transition: all 300ms ease;
+}
+.row {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0px auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  padding: 8px 12px;
+  background: #0068bd;
+  border-radius: 16px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  font-size: 18px;
+}
+
+/* NAVBAR CSS */
+
+.nav-header {
+  display: flex;
+  justify-content: end;
+  background: black;
+  color: white;
+}
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  width: 100%;
+  height: 60px;
+}
+.nav-services {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  height: 100%;
+}
+.nav-logo-wrapper {
+  width: 100px;
+  height: 40px;
+}
+.nav-logo {
+  height: 100%;
+  width: 100%;
+}
+.service-list {
+  display: flex;
+}
+.service-link {
+  margin: 0px 6px;
+}
+.sign-in {
+  margin: 0px 24px;
+}
+.sign-in-link {
+  font-size: 22px;
+  margin: 0px 18px;
+}
+
+/* POPULAR GAMES */
+
+.popular-container {
+  margin: 24px 0px;
+  color: white;
+}
+.popular-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popular-image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 4px;
+  height: 160px;
+  width: 275px;
+  filter: opacity(0.65);
+}
+.popular-image {
+  height: 100%;
+  width: 100%;
+}
+.popular-image-wrapper:hover {
+  transform: translateY(-6%);
+  transition: all 300ms ease;
+  box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.25);
+  filter: opacity(1);
+}
+.popular-slider-container {
+  white-space: nowrap;
+  margin-top: 48px;
+  transition: 2s ease;
+}
+.popular-tab-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px;
+}
+.slider-image-wrapper {
+  height: 1000px;
+  width: 100%;
+}
+.slider-image {
+  height: 100%;
+  width: 100%;
+}
+.slide {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.slider-information {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  margin: 48px 0px;
+  transition: 1s ease;
+}
+.slider-title {
+  color: white;
+  font-size: 38px;
+}
+.slider-description {
+  margin: 24px 0px;
+  color: white;
+  width: 50%;
+}
+.slider-banner-wrapper {
+  width: 500px;
+  height: 300px;
+}
+.slider-banner {
+  width: 100%;
+  height: 100%;
+}
+.slider-button {
+  padding: 8px 18px;
+  color: black;
+  background: white;
+  font-weight: 700px;
+}
+/* HARDWARE */
+
+.hardware-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hardware-tab-container {
+  display: flex;
+}
+.hardware-image-wrapper {
+  height: 800px;
+  width: 800px;
+}
+.hardware-image {
+  height: 100%;
+  width: 100%;
+}
+.hardware-description-title {
+  font-size: 32px;
+  color: #1f1f1f;
+}
+.hardware-description-para {
+  margin: 16px 48px 32px 0px;
+  width: 80%;
+  color: #1f1f1f;
+}
+
+/* HARDWARE ITEMS*/
+
+.hardware-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.hardware-items-image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  filter: opacity(0.55);
+  width: 130px;
+  height: 100px;
+}
+.hardware-items-image-wrapper:hover {
+  filter: opacity(1);
+  transition: all 300ms ease;
+}
+.hardware-items-image {
+  border: black;
+  height: 100%;
+  width: 100%;
+}
+
+/*EXPLORE PLAYSTATION */
+#explore-plus {
+  background-image: url("../src/assets/ExplorePlusbackground.webp");
+  background-size: cover;
+}
+.explore-plus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.explore-plus-information {
+  margin: 18px;
+}
+.explore-plus-description {
+  margin: 18px 0px;
+  width: 80%;
+}
+.explore-plus-header {
+  display: flex;
+  align-items: center;
+}
+.explore-plus-logo {
+  width: 100%;
+  height: 60px;
+}
+.explore-plus-image-wrapper {
+  width: 100%;
+  height: 500px;
+}
+.explore-plus-image {
+  height: 100%;
+  width: 100%;
+  margin: 18px;
+}
+
+/* MONTHLY FEATURED */
+
+#monthly-featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #26254f;
+  background-image: url("./assets/MonthlyfeaturedBackground.webp");
+}
+.monthly-featured-container {
+  margin: 100px 0px;
+}
+.monthly-featured-window-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monthly-featured-tab-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 24px;
+}
+.monthly-featured-tab-image-wrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 260px;
+  width: 400px;
+  box-shadow: 0px 12px 12px black;
+}
+.monthly-featured-tab-image-wrapper:hover {
+  transform: scale(1.05);
+  transition: 200ms ease;
+}
+.monthly-featured-tab-image {
+  height: 100%;
+  width: 100%;
+}
+.monthly-featured-tab-title {
+  color: white;
+  width: 80%;
+  font-size: 24px;
+  margin: 32px 0px;
+  line-height: 1.3em;
+}
+.monthly-featured-description {
+  width: 55%;
+  color: #fff;
+  margin: 32px 0px;
+  font-size: 24px;
+  filter: opacity(0.55);
+}
+.monthly-featured-enhance {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 32px 0px;
+}
+.monthly-featured-title {
+  color: white;
+  font-size: 40px;
+  margin: 24px 0px;
+}
+.monthly-featured-button {
+  padding: 8px 16px;
+  background: white;
+  border-radius: 16px;
+  color: black;
+  font-weight: 700;
+  margin: 32px 0px;
+}
+/* LATEST */
+
+#latest {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+
+  background-image: url("./assets/LatestPoster.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.latest-banner-wrapper {
+  height: 100%;
+  width: 400px;
+  margin-bottom: 48px;
+  margin-top: 600px;
+}
+.latest-banner {
+  height: 100%;
+  width: 100%;
+}
+.latest-container {
+  margin: 110px 0px;
+}
+.latest-title {
+}
+.latest-description {
+  margin: 24px 0px;
+  color: white;
+}
+.latest-enhance {
+  color: white;
+  font-size: 48px;
+}
+.latest-button {
+  padding: 4px 12px;
+  background: #d63d00;
+  border-radius: 16px;
+  color: white;
+  font-weight: 700;
+}
+/* NEW RELEASES */
+
+#new-releases {
+  background: black;
+  color: white;
+}
+.new-releases-container {
+  padding: 48px 0px;
+}
+.new-releases-information {
+  display: flex;
+  justify-content: space-between;
+}
+.new-releases-title {
+  color: white;
+  margin-top: 24px 0px;
+}
+.new-releases-description {
+  color: white;
+  margin: 12px 0px;
+  font-size: 20px;
+}
+.new-releases-tab-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-releases-tab-display {
+  margin: 48px 12px;
+}
+.new-releases-tab-image-wrapper {
+  overflow: hidden;
+  border-radius: 16px;
+  height: 250px;
+  width: 200px;
+}
+.new-releases-tab-image {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.new-releases-tab-image-wrapper:hover {
+  transform: scale(1.02);
+  transition: all 200ms ease;
+}
+.new-releases-tab-title {
+  color: white;
+  margin: 12px 0px;
+  width: 75%;
+}
+.new-releases-arrow-right {
+  background: white;
+  margin-right: 126px;
+  border-radius: 50%;
+}
+.new-releases-arrow-left {
+  background: white;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+/* PREVIOUS HARDWARE */
+
+.previous-hardware-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0px;
+}
+.previous-hardware-options {
+  display: flex;
+  margin: 48px;
+}
+.previous-hardware-item-image {
+  width: 100%;
+  height: 100%;
+}
+.previous-hardware-item-image-wrapper {
+  width: 100%;
+  height: 300px;
+}
+.previous-hardware-item-container {
+  margin-right: 24px;
+}
+.previous-hardware-item-title {
+  font-size: 32px;
+}
+.previous-hardware-description {
+  margin: 24px 0px;
+  font-size: 18px;
+}
+.previous-hardware-item-description {
+  margin: 24px 0px;
+  font-size: 18px;
+}
+.previous-hardware-title {
+  font-size: 36px;
+}
+/* STORE */
+
+#store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store-container {
+  display: flex;
+  align-items: center;
+}
+.store-information {
+  width: 36%;
+  margin-right: 24px;
+}
+.store-header {
+  display: flex;
+}
+.store-sub-title {
+  margin: 24px 0px;
+}
+.store-description {
+  margin: 24px 0px;
+}
+.store-image {
+  width: 100%;
+  height: 100%;
+}
+.store-image-wrapper {
+  height: 600px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.store-enhance {
+  font-size: 38px;
+  line-height: 1.3em;
+  margin: 24px 0px;
+}
+.store-bag-logo-wrapper {
+  background: #0068bd;
+  width: 50px;
+  height: 30px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  margin: 0px 12px;
+}
+.store-bag-logo {
+  height: 100%;
+  width: 100%;
+}
+.store-header {
+  display: flex;
+  align-items: center;
+}
+
+/* CLOTHING */
+
+#clothing {
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/ClothingBackground.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 48px;
+}
+.clothing-container {
+  margin: 48px 0px;
+}
+.clothing-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0px;
+}
+.clothing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.486);
+  margin: 0px 24px;
+  height: 500px;
+  width: 300px;
+}
+.clothing-item-title {
+  color: white;
+  margin-bottom: 58px;
+  width: 70%;
+}
+.clothing-title {
+  color: white;
+  font-size: 32px;
+  width: 45%;
+  margin: 24px 0px;
+  line-height: 1.05em;
+}
+.clothing-description {
+  color: #b2b2b2;
+}
+.clothing-item-image {
+  width: 100%;
+  height: 200px;
+  padding: 18px;
+  z-index: 100;
+}
+.clothing-shop-all {
+  display: flex;
+  justify-content: center;
+}
+.clothing-item-button {
+  margin: 24px 0px;
+}
+.clothing-button {
+  margin: 48px 0px;
+}
+.clothing-logo-wrapper {
+  height: 100px;
+  width: 120px;
+  overflow: hidden;
+}
+.clothing-logo {
+  height: 100%;
+  width: 100%;
+}
+.clothing-title {
+  font-size: 38px;
+  line-height: 1.3em;
+}
+
+/* SOCIALS */
+
+#socials {
+  background: #f5f7fa;
+}
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials-title {
+  margin: 48px 0px;
+}
+.socials-icons {
+  display: flex;
+}
+.socials-image-wrapper {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 170px;
+  padding: 24px;
+}
+.socials-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+  background: #00439c;
+}
+.footer-container {
+  padding: 48px 0px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list-container {
+  display: flex;
+}
+.footer-link {
+  color: white;
+  margin: 12px 24px;
+}
+.footer-description {
+  color: white;
+}
+.footer-copyright {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  width: 100px;
+  height: 110px;
+}
+
+.footer-image-wrapper {
+  width: 120px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+.footer-copyright-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* WEB RESPONSIVE */
+
+@media (max-width: 1920px) {
+  /* Generics */
+
+  .row {
+    max-width: 1300px;
+  }
+
+  /* Slider */
+
+  .slider-image-wrapper {
+    height: 600px;
+  }
+  .slider-banner-wrapper {
+    height: 200px;
+    width: 300px;
+  }
+  .slider-information {
+    position: absolute;
+    transform: translate(-20%, -40%);
+    font-size: 14px;
+  }
+  .slider-title {
+    font-size: 15px;
+  }
+  .popular-image-wrapper {
+    height: 140px;
+    width: 260px;
+  }
+
+  /* Hardware */
+
+  .hardware-items-image-wrapper {
+    height: 100px;
+    width: 130px;
+  }
+  .hardware-items-image {
+    padding: 24px;
+    padding-bottom: 0px;
+  }
+  .hardware-items-title {
+    margin: 8px 0px;
+    font-size: 14px;
+  }
+  /* Explore Plus */
+
+  .explore-plus-image-wrapper {
+    height: 400px;
+    width: 500px;
+    margin: 48px 0px;
+  }
+  /* Monthly Featured */
+  #monthly-featured {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #26254f;
+  }
+  .monthly-featured-container {
+    margin: 64px 0px;
+  }
+  .monthly-featured-title {
+    font-size: 40px;
+  }
+  .monthly-featured-enhance {
+    font-size: 40px;
+  }
+  .monthly-featured-description {
+    font-size: 18px;
+    filter: opacity(0.7);
+    width: 40%;
+    line-height: 1.6em;
+    margin: 3px 0px;
+  }
+  .monthly-featured-button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+  .monthly-featured-tab-image-wrapper {
+    height: 210px;
+    width: 390px;
+  }
+
+  /* Latest */
+
+  .latest-banner-wrapper {
+    margin-top: 100px;
+  }
+  .latest-enhance {
+    font-size: 40px;
+  }
+
+  /* New Releases */
+
+  .new-releases-tab-image-wrapper {
+    height: 180px;
+    width: 160px;
+    border-radius: 8px;
+  }
+
+  /* Previous Hardware */
+
+  .previous-hardware-item-image-wrapper {
+    width: 350px;
+    height: 260px;
+  }
+  .previous-hardware-description {
+    filter: opacity(0.75);
+  }
+
+  /* Store */
+
+  .store-image-wrapper {
+    height: 500px;
+  }
+
+  /* Clothing */
+
+  .clothing-logo-wrapper {
+    height: 80px;
+    width: 100px;
+    overflow: hidden;
+  }
+  #clothing {
+    background-size: contain;
+    background-color: #202024;
+  }
+}
+
+@media (max-width: 420px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .row {
+    max-width: 400px;
+  }
+  button {
+    padding: 4px 8px;
+    background: #0068bd;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 12px;
+  }
+
+  /* HARDWARE IMAGE */
+  .hardware-container {
+    
+    flex-direction:column-reverse
+  }
+  .hardware-image-wrapper {
+ width:100%;
+ height: 100%;
+ }
+  .hardware-description {
+    text-align: center;
+  }
+  .hardware-description-para {
+    text-align: center;
+    margin: 24px 0px;
+    width: 100%;
+  }
+  .hardware-description-title {
+    font-size: 22px;
+  }
+  .hardware-tab-container {
+    display: inline-flex;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 300ms ease-out;
+    cursor: grab;
+  }
+  /* EXPLORE PLUS */
+  .explore-plus-container{
+flex-direction:column-reverse;
+
+  }
+  .explore-plus-poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.explore-plus-image-wrapper{
+height:100%;
+width:100%;
+}
+.explore-plus-image{
+  width:100%;
+  height:100%;
+  margin:0px;
+}
+.explore-plus-logo{
+  width:300px;
+  margin:0px;
+}
+.explore-plus-information{
+  text-align:center;
+}
+.explore-plus-description{
+  width:100%;
+}
+/* MONTHLY-FEATURED */
+.monthly-featured-information{
+  text-align:center;
+}
+.monthly-featured-description{
+  width:100%;
+}
+.monthly-featured-enhance{
+  font-size:28px;
+  margin:12px 0px;
+}
+.monthly-featured-title{
+  font-size:24px;
+}
+.monthly-featured-button{
+  padding:4px 8px;
+  font-size:12px;
+}
+.monthly-featured-window-container{
+  display:inline;
+}
+.monthly-featured-tab-image-wrapper{
+width:100%;
+height:100%;
+}
+.monthly-featured-tab-title{
+  width:100%;
+}
+/* LATEST */
+.latest-banner-wrapper{
+  width:300px;
+  height:100%;
+}
+#latest{
+  text-align:center;
+  background-size: cover;
+}
+.latest-container{
+  font-size:14px;
+}
+.latest-enhance{
+  font-size:28px;
+}
+/* NEW RELEASES */
+.new-releases-button{
+  visibility: hidden;
+}
+.new-releases-title{
+  font-size:16px;
+}
+.new-releases-description{
+  font-size:16px;
+}
+.new-releases-information{
+  display: inline;
+}
+.new-releases-tab-image-wrapper{
+height:150px;
+width:150px;
+}
+.new-releases-tab-title{
+  font-size:14px;
+}
+/* STORE */
+.store-container{
+  display: inline-block;
+  flex-direction:column-reverse;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+}
+.store-information{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.store-poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store-image-wrapper{
+  width:350px;
+  height:300px;
+  margin:24px 0px;
+}
+.store-enhance{
+  font-size:20px;
+}
+}
+
