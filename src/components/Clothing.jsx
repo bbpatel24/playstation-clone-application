@@ -14,7 +14,7 @@ const Clothing = () => {
           <img src={ClothingLogo} alt="" className="clothing-logo" />
         </figure>
         <p className="clothing-title">
-         Bhavya PlayStation official licensed apparel and merchandise
+         PlayStation official licensed apparel and merchandise
         </p>
         <p className="clothing-description">
           Browse the PlayStation Gear store for official accessories,
