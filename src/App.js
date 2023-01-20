@@ -12,15 +12,13 @@ import Clothing from "./components/Clothing"
 import Socials from "./components/Socials"
 import Footer from "./components/Footer"
 function App() {
-  function showHardware() {
-    // onclicking hardware-items-container we want to display hardware-container
-  }
+
   return (
     <div className="App">
       <Nav />
       <Featured />
       <Popular />
-      <Hardware click={showHardware} />
+      <Hardware  />
       <ExplorePlus />
       <MonthlyFeatured />
       <Latest />

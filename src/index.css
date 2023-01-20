@@ -81,6 +81,7 @@ button {
 .popular-container {
   margin: 24px 0px;
   color: white;
+  overflow:hidden;
 }
 .popular-image-container {
   display: flex;
@@ -108,6 +109,7 @@ button {
   filter: opacity(1);
 }
 .popular-slider-container {
+
   white-space: nowrap;
   margin-top: 48px;
   transition: 2s ease;
@@ -129,13 +131,14 @@ button {
   display: inline-block;
   width: 100%;
   position: relative;
+  
 }
 .slider-information {
   position: absolute;
   top: 40%;
   left: 25%;
   margin: 48px 0px;
-  transition: 1s ease;
+  transition: 6s ease;
 }
 .slider-title {
   color: white;
@@ -159,6 +162,34 @@ button {
   color: black;
   background: white;
   font-weight: 700px;
+}
+/* Conditional Rendering Carousel on Screen Width < 420 */
+
+.popular-tab-carousel {
+  position: relative;
+  margin-top:24px;
+}
+.previousImageButton {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  padding: 12px 18px;
+  border-radius: 50%;
+  font-size: 16px;
+  background:#fff;
+  border:1px solid black;
+  z-index:2
+}
+.nextImageButton {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  padding: 12px 18px;
+  border-radius: 50%;
+  font-size: 16px;
+  background:#fff;
+  border:1px solid black;
+  z-index:2
 }
 /* HARDWARE */
 
@@ -213,6 +244,7 @@ button {
   border: black;
   height: 100%;
   width: 100%;
+  object-fit:contain;
 }
 
 /*EXPLORE PLAYSTATION */
@@ -445,7 +477,7 @@ button {
   height: 100%;
 }
 .previous-hardware-item-image-wrapper {
-  width: 100%;
+  width: 350px;
   height: 300px;
 }
 .previous-hardware-item-container {
@@ -464,6 +496,26 @@ button {
 }
 .previous-hardware-title {
   font-size: 36px;
+}
+/* Conditional Rendering Carousel on Screen Width < 420 */
+.previous-hardware-carousel {
+  position: relative;
+}
+.prevButton {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.nextButton {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
 }
 /* STORE */
 
@@ -505,16 +557,15 @@ button {
   margin: 24px 0px;
 }
 .store-bag-logo-wrapper {
-  background: #0068bd;
-  width: 50px;
-  height: 30px;
-  padding: 4px 8px;
-  border-radius: 16px;
+  background: #000;
+  padding: 8px 12px;
+  border-radius: 50%;
   margin: 0px 12px;
 }
 .store-bag-logo {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 .store-header {
   display: flex;
@@ -546,7 +597,7 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.486);
+  background: rgba(0, 0, 0, 0.33);
   margin: 0px 24px;
   height: 500px;
   width: 300px;
@@ -568,7 +619,7 @@ button {
 }
 .clothing-item-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   padding: 18px;
   z-index: 100;
 }
@@ -816,16 +867,49 @@ button {
     border: none;
     font-size: 12px;
   }
-
+  .nav-services {
+    width: 100%;
+    font-size: 12px;
+  }
+  .slider-image-wrapper {
+    width: 100%;
+    height: 450px;
+  }
+  .slider-image {
+    object-fit: cover;
+  }
+  .slider-banner-wrapper {
+    width: 200px;
+    height: 120px;
+  }
+  .slider-title {
+    font-size: 18px;
+  }
+  .slider-description {
+    font-size: 14px;
+    margin: 10px 0px;
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .slider-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
   /* HARDWARE IMAGE */
   .hardware-container {
-    
-    flex-direction:column-reverse
+    flex-direction: column-reverse;
   }
   .hardware-image-wrapper {
- width:100%;
- height: 100%;
- }
+    width: 100%;
+    height: 100%;
+  }
   .hardware-description {
     text-align: center;
   }
@@ -845,124 +929,217 @@ button {
     cursor: grab;
   }
   /* EXPLORE PLUS */
-  .explore-plus-container{
-flex-direction:column-reverse;
-
+  .explore-plus-container {
+    flex-direction: column-reverse;
   }
-  .explore-plus-poster{
+  .explore-plus-poster {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-.explore-plus-image-wrapper{
-height:100%;
-width:100%;
-}
-.explore-plus-image{
-  width:100%;
-  height:100%;
-  margin:0px;
-}
-.explore-plus-logo{
-  width:300px;
-  margin:0px;
-}
-.explore-plus-information{
-  text-align:center;
-}
-.explore-plus-description{
-  width:100%;
-}
-/* MONTHLY-FEATURED */
-.monthly-featured-information{
-  text-align:center;
-}
-.monthly-featured-description{
-  width:100%;
-}
-.monthly-featured-enhance{
-  font-size:28px;
-  margin:12px 0px;
-}
-.monthly-featured-title{
-  font-size:24px;
-}
-.monthly-featured-button{
-  padding:4px 8px;
-  font-size:12px;
-}
-.monthly-featured-window-container{
-  display:inline;
-}
-.monthly-featured-tab-image-wrapper{
-width:100%;
-height:100%;
-}
-.monthly-featured-tab-title{
-  width:100%;
-}
-/* LATEST */
-.latest-banner-wrapper{
-  width:300px;
-  height:100%;
-}
-#latest{
-  text-align:center;
-  background-size: cover;
-}
-.latest-container{
-  font-size:14px;
-}
-.latest-enhance{
-  font-size:28px;
-}
-/* NEW RELEASES */
-.new-releases-button{
-  visibility: hidden;
-}
-.new-releases-title{
-  font-size:16px;
-}
-.new-releases-description{
-  font-size:16px;
-}
-.new-releases-information{
-  display: inline;
-}
-.new-releases-tab-image-wrapper{
-height:150px;
-width:150px;
-}
-.new-releases-tab-title{
-  font-size:14px;
-}
-/* STORE */
-.store-container{
-  display: inline-block;
-  flex-direction:column-reverse;
-  text-align:center;
-  justify-content: center;
-  align-items: center;
-}
-.store-information{
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-}
-.store-poster{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store-image-wrapper{
-  width:350px;
-  height:300px;
-  margin:24px 0px;
-}
-.store-enhance{
-  font-size:20px;
-}
-}
+  .explore-plus-image-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  .explore-plus-image {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .explore-plus-logo {
+    width: 300px;
+    margin: 0px;
+  }
+  .explore-plus-information {
+    text-align: center;
+  }
+  .explore-plus-description {
+    width: 100%;
+  }
+  /* MONTHLY-FEATURED */
+  .monthly-featured-information {
+    text-align: center;
+  }
+  .monthly-featured-description {
+    width: 100%;
+  }
+  .monthly-featured-enhance {
+    font-size: 28px;
+    margin: 12px 0px;
+  }
+  .monthly-featured-title {
+    font-size: 24px;
+  }
+  .monthly-featured-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .monthly-featured-window-container {
+    display: inline;
+  }
+  .monthly-featured-tab-image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .monthly-featured-tab-title {
+    width: 100%;
+  }
+  /* LATEST */
+  .latest-banner-wrapper {
+    width: 300px;
+    height: 100%;
+  }
+  #latest {
+    text-align: center;
+    background-size: cover;
+  }
+  .latest-container {
+    font-size: 14px;
+  }
+  .latest-enhance {
+    font-size: 28px;
+  }
+  /* NEW RELEASES */
+  .new-releases-container {
+    padding: 16px;
+  }
+  .new-releases-title {
+    font-size: 16px;
+  }
+  .new-releases-button {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    font-size: 0;
+  }
+  .new-releases-description {
+    font-size: 14px;
+  }
+  .new-releases-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .new-releases-tab-display {
+    width: 40%;
+  }
+  .new-releases-tab-image-wrapper {
+    height: 150px;
+    width: 150px;
+  }
+  .new-releases-tab-title {
+    font-size: 14px;
+  }
+  /* PREVIOUS HARDWARE */
+  .previous-hardware-item-container {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previous-hardware-item-image-wrapper {
+    width: 350px;
+    height: 240px;
+  }
+  .previous-hardware-item-image {
+    object-fit: contain;
+  }
+  .previous-hardware-description,
+  .previous-hardware-item-title,
+  .previous-hardware-item-description {
+    font-size: 18px;
+    margin-left: 24px;
+    text-align: center;
+  }
 
+  /* STORE */
+  .store-container {
+    display: inline-block;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .store-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .store-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .store-image-wrapper {
+    width: 350px;
+    height: 300px;
+    margin: 24px 0px;
+  }
+  .store-enhance {
+    font-size: 20px;
+  }
+  .store-description {
+    margin: 14px 16px;
+  }
+  /* STORE */
+  .clothing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clothing-options-container {
+    display: inline;
+  }
+  .clothing-title {
+    font-size: 16px;
+    margin: 18px 12px;
+    line-height: 1em;
+    width: fit-content;
+    text-align: center;
+  }
+  .clothing-description {
+    width: fit-content;
+    margin: 18px 12px;
+    text-align: center;
+  }
+  .clothing-item {
+    margin: 24px 0px;
+  }
+  .clothing-item-image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+  .clothing-item-title {
+    margin-bottom: 12px;
+  }
+  /* SOCIALS */
+
+  .socials-image-wrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 48px;
+    padding: 24px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    padding: 32px 20px;
+  }
+  .footer-link {
+    margin: 2px 4px;
+    font-size: 10px;
+  }
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+  }
+  .footer-description {
+    font-size: 14px;
+  }
+}

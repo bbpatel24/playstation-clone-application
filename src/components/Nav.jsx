@@ -8,7 +8,7 @@ const Nav = () => {
       <div className="nav-container">
         <div className="nav-services">
           <figure className="nav-logo-wrapper">
-            <img src={PSLogo}alt="PS-logo" className="nav-logo"/>
+            <img src={PSLogo} alt="PS-logo" className="nav-logo"/>
           </figure>
           <ul className="service-list">
             <li>
